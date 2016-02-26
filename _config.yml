@@ -1,0 +1,27 @@
+# Site settings
+title: Jason Etcovitch
+email: jasonetco@gmail.com
+description: "Jason Etcovitch, Toronto-based Graphic Design and Web Developer"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://jasonet.co" # the base hostname & protocol for your site
+
+github_username:  jasonetco
+
+# Build settings
+markdown: kramdown
+
+exclude: [
+	.gitignore,
+	Gruntfile.js,
+	Gemfile.lock,
+	node_modules/,
+	package.json,
+	README.md,
+	LICENSE
+]
+
+sass:
+  style: :compressed
+
+gems:
+ - jekyll-sitemap
