@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Take a look at us"
+link:   "gd"
+date:   2016-02-03 18:00:01 -0500
+description: "A publication promoting the graphic design program at Dawson College."
+tags: publication poster
+---
+<div class="section"><img src="/assets/img/gd/gd1.png" alt="Take a look at us"></div>
+<div class="section"><img src="/assets/img/gd/gd2.png" alt="Take a look at us"></div>
+<div class="section"><img src="/assets/img/gd/gd3.png" alt="Take a look at us"></div>
+<div class="section"><img src="/assets/img/gd/gd4.png" alt="Take a look at us"></div>
+<div class="section"><img src="/assets/img/gd/gd5.png" alt="Take a look at us"></div>

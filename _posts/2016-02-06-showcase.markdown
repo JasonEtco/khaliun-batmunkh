@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Showcase"
+link:   "showcase"
+date:   2016-02-06 18:00:59 -0500
+description: "A poster design for the group Showcase and their experimental album titled GHOST I-IV. The design focuses on the music’s ambiance and style."
+tags: promotion poster photography
+---
+<div class="section"><img src="/assets/img/showcase/showcase1.png" alt="Showcase"></div>
+<div class="section"><img src="/assets/img/showcase/showcase2.png" alt="Showcase"></div>
+<div class="section"><img src="/assets/img/showcase/showcase3.gif" alt="Showcase"></div>

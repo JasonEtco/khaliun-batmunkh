@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "YUL Pizzeria"
+link:   "yul"
+date:   2016-02-10 18:09:51 -0500
+description: "Branding project for a pizzeria at the YUL airport"
+tags: logo branding
+---
+<div class="section"><img src="/assets/img/yul/yul1.gif" alt="YUL Pizzeria"></div>
+<div class="section"><img src="/assets/img/yul/yul2.png" alt="YUL Pizzeria"></div>
+<div class="section"><img src="/assets/img/yul/yul3.png" alt="YUL Pizzeria"></div>
+<div class="section"><img src="/assets/img/yul/yul4.png" alt="YUL Pizzeria"></div>
+<div class="section"><img src="/assets/img/yul/yul5.png" alt="YUL Pizzeria"></div>
+<div class="section"><img src="/assets/img/yul/yul6.png" alt="YUL Pizzeria"></div>

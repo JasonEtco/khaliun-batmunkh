@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Nine Inch Nails"
+link:   "nin"
+date:   2016-02-03 18:00:59 -0500
+description: "A poster design for the group NINE INCH NAILS and their experimental album titled GHOST I-IV. The design focuses on the music’s ambiance and style."
+tags: promotion poster
+---
+<div class="section"><img src="/assets/img/nin/nin1.png" alt="Nine Inch Nails"></div>
+<div class="section"><img src="/assets/img/nin/nin2.gif" alt="Nine Inch Nails"></div>
+<div class="section"><img src="/assets/img/nin/nin3.png" alt="Nine Inch Nails"></div>
+<div class="section"><img src="/assets/img/nin/nin4.png" alt="Nine Inch Nails"></div>

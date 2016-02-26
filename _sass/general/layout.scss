@@ -1,0 +1,16 @@
+html, body, .content-wrapper, .post {
+	height: 100%;
+}
+
+body { 	overflow-x: hidden; }
+
+.content-wrapper {
+	box-sizing: border-box;
+
+	transform: translateX(0);
+	transition: transform 0.5s;
+
+	&.shifted {
+		transform: translateX($nav-width);
+	}
+}

@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Frank Gehry"
+link:   "gehry"
+date:   2016-02-01 18:00:00 -0500
+description: "A collector’s box set designed for the American architect Frank Gehry. The branding focuses on the variety of materials used by the artist as well as his unique designs."
+tags: logo branding publication photography
+---
+<div class="section"><img src="/assets/img/gehry/gehry1.png" alt="Frank Gehry"></div>
+<div class="section"><img src="/assets/img/gehry/gehry2.png" alt="Frank Gehry"></div>
+<div class="section"><img src="/assets/img/gehry/gehry3.png" alt="Frank Gehry"></div>
+<div class="section"><img src="/assets/img/gehry/gehry4.png" alt="Frank Gehry"></div>
+<div class="section"><img src="/assets/img/gehry/gehry5.png" alt="Frank Gehry"></div>
+<div class="section"><img src="/assets/img/gehry/gehry6.png" alt="Frank Gehry"></div>
+<div class="section"><img src="/assets/img/gehry/gehry7.png" alt="Frank Gehry"></div>
+<div class="section"><img src="/assets/img/gehry/gehry8.png" alt="Frank Gehry"></div>
+<div class="section"><img src="/assets/img/gehry/gehry9.png" alt="Frank Gehry"></div>

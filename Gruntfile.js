@@ -67,8 +67,10 @@ module.exports = function(grunt) {
                     '**/*.html',
                     '**/*.md',
                     '_posts/*.md',
+                    '_posts/*.markdown',
                     '_config.yml',
                     '*.html',
+                    '*.markdown',
                     '*.md'
                 ],
                 tasks: ['shell:jekyllBuild', 'uglify', 'postcss']
@@ -85,20 +87,7 @@ module.exports = function(grunt) {
                     '_site/main.js': '_js/*.js'
                 }
             }
-        },
-
-        svgstore: {
-            options: {
-                prefix : '', // This will prefix each <g> ID
-                includeTitleElement : false,
-            },
-            default : {
-                files: {
-                    '_includes/svg-defs.html': ['_svgs/*.svg'],
-                }
-            }
         }
-
     });
 
     grunt.loadNpmTasks('grunt-shell');
@@ -109,6 +98,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-build-control');
     grunt.loadNpmTasks('grunt-svgstore');
 
-    grunt.registerTask('default', ['svgstore', 'shell:jekyllBuild', 'uglify', 'postcss', 'express', 'watch']);
-    grunt.registerTask('deploy',  ['svgstore', 'shell:jekyllBuild', 'uglify', 'postcss']);
+    grunt.registerTask('default', ['shell:jekyllBuild', 'uglify', 'postcss', 'express', 'watch']);
+    grunt.registerTask('deploy',  ['shell:jekyllBuild', 'uglify', 'postcss']);
 };

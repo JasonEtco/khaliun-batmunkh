@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Top 10"
+link:   "top"
+date:   2016-02-07 18:00:59 -0500
+description: "A publication design focusing on my TOP 10's."
+tags: publication
+---
+<div class="section"><img src="/assets/img/top/top1.gif" alt="Top 10"></div>
+<div class="section"><img src="/assets/img/top/top2.png" alt="Top 10"></div>
+<div class="section"><img src="/assets/img/top/top3.png" alt="Top 10"></div>
+<div class="section"><img src="/assets/img/top/top4.png" alt="Top 10"></div>
+<div class="section"><img src="/assets/img/top/top5.png" alt="Top 10"></div>
+<div class="section"><img src="/assets/img/top/top6.png" alt="Top 10"></div>

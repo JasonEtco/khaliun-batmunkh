@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "93 Days"
+link:   "93days"
+date:   2016-02-09 18:09:51 -0500
+description: "Info-graphical design on my daily activities for the duration of 93 days in a book format. "
+tags: logo branding publication photography
+---
+<div class="section"><img src="/assets/img/93days/93days1.png" alt="93days"></div>
+<div class="section"><img src="/assets/img/93days/93days2.png" alt="93days"></div>
+<div class="section"><img src="/assets/img/93days/93days3.png" alt="93days"></div>
+<div class="section"><img src="/assets/img/93days/93days4.png" alt="93days"></div>
+<div class="section"><img src="/assets/img/93days/93days5.png" alt="93days"></div>
+<div class="section"><img src="/assets/img/93days/93days6.png" alt="93days"></div>
+<div class="section"><img src="/assets/img/93days/93days7.png" alt="93days"></div>
+<div class="section"><img src="/assets/img/93days/93days8.gif" alt="93days"></div>

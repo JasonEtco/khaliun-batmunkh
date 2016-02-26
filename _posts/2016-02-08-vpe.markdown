@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Varech Phare Est"
+link:   "vpe"
+date:   2016-02-08 18:00:59 -0500
+description: "Packaging design for a seaweed company. The design focuses on the modern nautical personality of the company as well as their ecological morals."
+tags: packaging
+---
+<div class="section"><img src="/assets/img/vpe/vpe1.gif" alt="Varech Phare Est"></div>
+<div class="section"><img src="/assets/img/vpe/vpe2.png" alt="Varech Phare Est"></div>
+<div class="section"><img src="/assets/img/vpe/vpe3.png" alt="Varech Phare Est"></div>
+<div class="section"><img src="/assets/img/vpe/vpe4.png" alt="Varech Phare Est"></div>
+<div class="section"><img src="/assets/img/vpe/vpe5.png" alt="Varech Phare Est"></div>
+<div class="section"><img src="/assets/img/vpe/vpe6.png" alt="Varech Phare Est"></div>

@@ -1,7 +1,7 @@
 {
-  "name": "jasonet.co",
-  "description": "Jason Etcovitch, Toronto-based Graphic Design and Web Developer",
-  "homepage": "http://jasonet.co/",
+  "name": "khaliun-batmkunkh",
+  "description": "Khaliun Batmunkh, Graphic Designer",
+  "homepage": "http://khaliun.com",
   "author": "Jason <jasonetco@gmail.com>",
   "contributors": [
     {
@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/JasonEtco/portfolio-jekyll.git"
+    "url": "https://github.com/JasonEtco/khaliun-batmkunkh.git"
   },
   "license": "GPL-2.0",
   "dependencies": {

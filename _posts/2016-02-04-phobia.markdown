@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Chaetophobia"
+link:   "phobia"
+date:   2016-02-04 18:00:01 -0500
+description: "A poster design illustrating the fear of hair: Chaetophobia. The poster was silk screened by hand on different mediums."
+tags: poster illustration
+---
+<div class="section"><img src="/assets/img/phobia/phobia1.gif" alt="Chaetophobia"></div>
+<div class="section"><img src="/assets/img/phobia/phobia2.png" alt="Chaetophobia"></div>
+<div class="section"><img src="/assets/img/phobia/phobia3.png" alt="Chaetophobia"></div>
+<div class="section"><img src="/assets/img/phobia/phobia4.png" alt="Chaetophobia"></div>
+<div class="section"><img src="/assets/img/phobia/phobia5.png" alt="Chaetophobia"></div>
+<div class="section"><img src="/assets/img/phobia/phobia6.png" alt="Chaetophobia"></div>
+<div class="section"><img src="/assets/img/phobia/phobia7.gif" alt="Chaetophobia"></div>

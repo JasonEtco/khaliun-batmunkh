@@ -5,9 +5,11 @@
 
   <body>
 
-    {% include header.html %}
-
-    {{ content }}
+    {% include nav.html %}
+    
+	<div class="content-wrapper js--will-shift">
+	    {{ content }}
+    </div>
 
     {% include scripts.html %}
 

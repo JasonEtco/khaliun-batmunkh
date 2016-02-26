@@ -1,4 +1,14 @@
 ---
 ---
 
-import
+@import "general/normalize";
+
+@import "general/variables";
+@import "general/layout";
+
+@import "general/nav";
+
+
+@import "home";
+@import "contact";
+@import "post";

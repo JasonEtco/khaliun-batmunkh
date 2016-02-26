@@ -1,11 +1,9 @@
 # Site settings
-title: Jason Etcovitch
-email: jasonetco@gmail.com
-description: "Jason Etcovitch, Toronto-based Graphic Design and Web Developer"
+title: Khaliun Batmunkh
+email: khaliunbatmunkh@gmail.com
+description: "Khaliun Batmunkh, Graphic Designer"
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://jasonet.co" # the base hostname & protocol for your site
-
-github_username:  jasonetco
+url: "http://khaliun.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
