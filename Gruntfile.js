@@ -4,13 +4,20 @@ module.exports = function(grunt) {
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        shell: {
-            jekyllBuild: {
-                command: 'jekyll build'
+
+        jekyll: {
+            working: {
+              options: {
+                config: '_config.yml',
+                drafts: true
+              }
             },
 
-            jekyllServe: {
-                command: 'jekyll serve'
+            deploy: {
+              options: {
+                config: '_config.yml',
+                drafts: false
+              }
             }
         },
 
@@ -28,7 +35,7 @@ module.exports = function(grunt) {
         postcss: {
           options: {
             processors: [
-              require('autoprefixer-core')({browsers: ['last 2 versions', '> 5%']})
+              require('autoprefixer')({browsers: ['last 2 versions', '> 5%']})
             ]
           },
 
@@ -45,21 +52,14 @@ module.exports = function(grunt) {
                     '_sass/**/*.scss',
                     'css/*.scss'
                 ],
-                tasks: ['shell:jekyllBuild', 'uglify', 'postcss']
+                tasks: ['jekyll', 'uglify', 'postcss']
             },
 
             js: {
                 files: [
                     '_js/*.js'
                 ],
-                tasks: ['shell:jekyllBuild', 'uglify', 'postcss']
-            },
-
-            svg: {
-                files: [
-                    '_svgs/*.svg'
-                ],
-                tasks: ['svgstore', 'shell:jekyllBuild', 'uglify', 'postcss']
+                tasks: ['jekyll', 'uglify', 'postcss']
             },
 
             jekyll: {
@@ -67,13 +67,12 @@ module.exports = function(grunt) {
                     '**/*.html',
                     '**/*.md',
                     '_posts/*.md',
-                    '_posts/*.markdown',
                     '_config.yml',
                     '*.html',
-                    '*.markdown',
-                    '*.md'
+                    '*.md',
+                    '!_site/**/*'
                 ],
-                tasks: ['shell:jekyllBuild', 'uglify', 'postcss']
+                tasks: ['jekyll', 'uglify', 'postcss']
             },
 
             options: {
@@ -90,14 +89,12 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.loadNpmTasks('grunt-shell');
     grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-express');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-build-control');
-    grunt.loadNpmTasks('grunt-svgstore');
+    grunt.loadNpmTasks('grunt-jekyll');
 
-    grunt.registerTask('default', ['shell:jekyllBuild', 'uglify', 'postcss', 'express', 'watch']);
-    grunt.registerTask('deploy',  ['shell:jekyllBuild', 'uglify', 'postcss']);
+    grunt.registerTask('default', ['jekyll:working', 'uglify', 'postcss', 'express', 'watch']);
+    grunt.registerTask('deploy',  ['jekyll:deploy', 'uglify', 'postcss', 'buildcontrol:pages']);
 };
