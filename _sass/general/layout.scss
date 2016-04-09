@@ -3,14 +3,12 @@ html, body, .content-wrapper, .post {
 }
 
 body { 	overflow-x: hidden; }
+body.modal--open { overflow-y: hidden; }
 
 .content-wrapper {
 	box-sizing: border-box;
+	overflow-x: hidden;
 
 	transform: translateX(0);
 	transition: transform 0.5s;
-
-	&.shifted {
-		transform: translateX($nav-width);
-	}
 }

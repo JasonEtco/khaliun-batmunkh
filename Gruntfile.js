@@ -21,12 +21,11 @@ module.exports = function(grunt) {
             }
         },
 
-        express: {
-            all: {
+        connect: {
+            server: {
                 options: {
                     port: 4000,
-                    hostname: '0.0.0.0',
-                    bases: ['_site'],
+                    base: '_site/',
                     livereload: true
                 }
             }
@@ -46,6 +45,9 @@ module.exports = function(grunt) {
         },
 
         watch: {
+            options: {
+                livereload: true
+            },
             css: {
                 files: [
                     '_sass/*.scss',
@@ -73,10 +75,6 @@ module.exports = function(grunt) {
                     '!_site/**/*'
                 ],
                 tasks: ['jekyll', 'uglify', 'postcss']
-            },
-
-            options: {
-                livereload: true
             }
         },
 
@@ -91,10 +89,10 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-express');
+    grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-jekyll');
 
-    grunt.registerTask('default', ['jekyll:working', 'uglify', 'postcss', 'express', 'watch']);
+    grunt.registerTask('default', ['jekyll:working', 'uglify', 'postcss', 'connect', 'watch']);
     grunt.registerTask('deploy',  ['jekyll:deploy', 'uglify', 'postcss', 'buildcontrol:pages']);
 };

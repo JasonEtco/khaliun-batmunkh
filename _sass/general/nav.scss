@@ -11,6 +11,10 @@
 	width: $nav-width;
 	box-sizing: border-box;
 
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
 	transform: translateX(0);
 	transition: transform 0.5s;
 
@@ -18,11 +22,6 @@
 
 	&__list {
 		padding: 0;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		height: 100%;
-		justify-content: center;
 	}
 
 	&__list-item {
@@ -50,14 +49,7 @@
 		text-decoration: none;
 		font-size: 12px;
 		font-family: $body-stack;
-		position: absolute;
-		left: $padding / 2;
 	}
-
-	&__name { top: $padding / 2; }
-	&__contact { bottom: $padding / 2; }
-
-
 
 
 	&__button {
