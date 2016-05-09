@@ -24,6 +24,7 @@ var contact = document.querySelector('.home__contact-link');
 var contactLink = document.querySelector('.nav__contact');
 var contactModal = document.querySelector('.contact__modal-wrapper');
 var contactClose = document.querySelector('.contact__close');
+var contactOverlay = document.querySelector('.contact__modal-wrapper .overlay');
 
 if(contact) {
 	contact.addEventListener('click', function(e) {
@@ -40,8 +41,8 @@ if(contact) {
 contactLink.addEventListener('click', function(e) {
 	e.preventDefault();
 
-	willShift.classList.remove('shifted');
 	nav.classList.remove('shifted');
+	navButton.classList.remove('shifted');
 	body.classList.remove('shifted');
 	
 	contactModal.classList.add('modal--open');
@@ -53,27 +54,37 @@ contactClose.addEventListener('click', function(e) {
 	body.classList.remove('modal--open');
 });
 
-// POST MODAL
-var info = document.querySelector('.post__info');
-var postModal = document.querySelector('.post__modal-wrapper');
-var postClose = document.querySelector('.post__close');
-
-info.addEventListener('click', function(e) {
-	if (body.classList.contains('shifted')) {
-		e.preventDefault();
-		content.style.overflowY = "initial";
-	} else {
-		e.preventDefault();
-		postModal.classList.add('modal--open');
-		body.classList.add('modal--open');
-		content.style.overflowY = "hidden";
-	}
-});
-
-postClose.addEventListener('click', function() {
-	postModal.classList.remove('modal--open');
+contactOverlay.addEventListener('click', function(e) {
+	contactModal.classList.remove('modal--open');
 	body.classList.remove('modal--open');
 });
+
+
+// POST MODAL
+var info = document.querySelector('.post__info');
+
+if (info) {
+	var postModal = document.querySelector('.post__modal-wrapper');
+	var postOverlay = document.querySelector('.post__modal-wrapper .overlay');
+	var postClose = document.querySelector('.post__close');
+
+	info.addEventListener('click', function(e) {
+		if (body.classList.contains('shifted')) {
+			e.preventDefault();
+		} else {
+			e.preventDefault();
+			postModal.classList.add('modal--open');
+		}
+	});
+
+	postOverlay.addEventListener('click', function() {
+		postModal.classList.remove('modal--open');
+	});
+
+	postClose.addEventListener('click', function() {
+		postModal.classList.remove('modal--open');
+	});
+}
 
 
 // FULLPAGE

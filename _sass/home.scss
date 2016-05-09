@@ -15,7 +15,7 @@
 		left: 20px;
 		color: black;
 		text-decoration: none;
-		font-size: 8px;
+		font-size: $font-size;
 		font-family: $body-stack;
 		display: block;
 		text-transform: uppercase;
@@ -32,7 +32,7 @@
 	&__contact-link {
 		color: black;
 		text-decoration: none;
-		font-size: 8px;
+		font-size: $font-size;
 		width: 1em;
 		letter-spacing: 2em;
 		font-family: $body-stack;
