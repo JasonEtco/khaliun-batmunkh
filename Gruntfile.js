@@ -94,5 +94,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-jekyll');
 
     grunt.registerTask('default', ['jekyll:working', 'uglify', 'postcss', 'connect', 'watch']);
-    grunt.registerTask('deploy',  ['jekyll:deploy', 'uglify', 'postcss', 'buildcontrol:pages']);
+    grunt.registerTask('deploy',  ['jekyll:deploy', 'uglify', 'postcss']);
 };
